@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cors({
-  origin:'http://localhost:5173',
+  origin:'https://convertvideo-1.onrender.com',
   credentials: true,
 }))
 app.use(morgan('dev'))
