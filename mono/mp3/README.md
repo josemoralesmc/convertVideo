@@ -1,0 +1,1 @@
+Al convertir un video, el mp3 momentaneamente se guardará acá previo a ser subido al bucket de s3.

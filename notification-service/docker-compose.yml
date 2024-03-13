@@ -1,0 +1,12 @@
+version: 1.0.0
+services: 
+  app:
+    build: . 
+    ports:
+      - "3030:3000"
+    env_file:
+      - .env
+    environment:
+      - GOOGLE_EMAIL_SENDER=${GOOGLE_EMAIL_SENDER}
+      - GOOGLE_PASSWORD=${GOOGLE_PASSWORD}
+

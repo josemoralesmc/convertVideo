@@ -1,0 +1,39 @@
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.hola.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    outline: none;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd.MuiIconButton-sizeMedium.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    margin-left: 24%;
+}
+.item {
+    width: 50%;
+    margin-left: 50%;
+}
+
+
+.css-2ulfj5-MuiTypography-root {
+    margin-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        margin-left: 5%;
+    }
+ 
+
+    .css-2ulfj5-MuiTypography-root {
+        margin: 0;
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+    }
+    
+}
