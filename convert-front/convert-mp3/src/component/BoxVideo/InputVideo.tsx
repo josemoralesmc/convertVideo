@@ -29,7 +29,7 @@ const InputVideo: React.FC<DropFileInputProps> = (props) => {
       formData.append("video", selectedFile);
 
       try {
-        const response = await fetch("http://localhost:8000/video/upload", {
+        const response = await fetch("https://convertvideo-j12c.onrender.com/video/upload", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,

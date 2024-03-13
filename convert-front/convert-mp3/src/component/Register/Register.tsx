@@ -27,7 +27,7 @@ const Register = () => {
     if (!isValidEmail) {
       return;
     }
-    const response = await fetch("http://localhost:8000/auth/register", {
+    const response = await fetch("https://convertvideo-j12c.onrender.com/auth/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
