@@ -1,6 +1,6 @@
 import { S3Client, PutObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3'
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner'
-import config from '../../../convert-video-to-mp3-microservice/src/config/config';
+import config from '../config/config';
 
 
 interface UploadFileParams {
