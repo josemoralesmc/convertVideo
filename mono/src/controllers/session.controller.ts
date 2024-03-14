@@ -16,7 +16,6 @@ export class UserController {
         return res.send("Contraseña incorrecta");
       }
       const token = generateToken(mail, id);
-      res.cookie("Token", token);
       return res.json({ success: true, message: "Login successes", data: token });
     } catch (error) {
       return res.json({ success: false, message: "failed to login", data: error });
