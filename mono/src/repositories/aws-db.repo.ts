@@ -24,7 +24,7 @@ export class DynamoClient {
         ExpressionAttributeValues: {
           ':mail': { S: params.mail }
         },
-        TableName: 'users'
+        TableName: 'usersConvert'
       }
       const command = new QueryCommand(paramsuser)
       const response = await this.DynamoClient.send(command)
@@ -53,7 +53,7 @@ export class DynamoClient {
             S: params.id
           }
         },
-        TableName: 'users'
+        TableName: 'usersConvert'
       }
       const command = new PutItemCommand(paramuser)
       await this.DynamoClient.send(command)

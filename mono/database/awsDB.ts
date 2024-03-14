@@ -12,7 +12,7 @@ export default async function setUpEnviroment() {
   const DynamoClient = new DynamoDBClient(DynamoConfig)
   
         try {
-          const describeTableParams = { TableName: 'users' };
+          const describeTableParams = { TableName: 'usersConvert' };
           try {
             await DynamoClient.send(new DescribeTableCommand(describeTableParams));
             console.log('La tabla ya existe. No es necesario crearla.');
@@ -23,7 +23,7 @@ export default async function setUpEnviroment() {
             }
           }
           const params = {
-            TableName: 'users',
+            TableName: 'usersConvert',
             KeySchema: [
               { AttributeName: 'mail', KeyType: 'HASH' },
               { AttributeName: 'id', KeyType: 'RANGE' }
