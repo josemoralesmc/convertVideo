@@ -34,7 +34,7 @@ export class UploadVideoService {
             const mp3Path = await convertVideoToMp3(video.buffer, videoName) as string;
             const mp3File = await fs.readFile(mp3Path)
             const params = {
-                Bucket: "mp3-dev-cristian",
+                Bucket: "mp3convert",
                 Key: videoName,
                 Body: mp3File
             };

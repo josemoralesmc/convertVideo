@@ -11,7 +11,7 @@ interface UploadFileParams {
 
 export class AwsS3Repo {
     private s3ConfigObject = {
-            region: 'us-east-1',
+            region: 'us-east-2',
             credentials: {
                 accessKeyId: config.AWS_ACCESS_KEY_ID_CONVERT as string,
                 secretAccessKey: config.AWS_SECRET_ACCESS_KEY_CONVERT as string
