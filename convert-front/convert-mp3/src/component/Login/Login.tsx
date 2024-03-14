@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState} from "react";
+import  Cookies  from "js-cookie";
 import "./Login.css";
 
 
@@ -46,7 +47,7 @@ const Login: React.FC= () => {
       
       
       if (data.success == true) {
-        
+        Cookies.set("Token", data.data)
         navigate("/home");
       } else {
         setError(true)
